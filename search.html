@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no">
+<title>查询</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="assets/css/common.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<script src="assets/js/jquery-1.7.2.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/iscroll.js"></script>
+<script>
+         //字体设置
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 50* (clientWidth / 375) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+</script>
+<body class="search">
+    <div class="inputCon">
+    	<i class="icon01"></i>
+    	<input type="text" value="日程标题">
+    	<i class="icon02"></i>
+    </div>
+    <span class="btn">搜索</span>
+    <ul class="kind">
+    	<li>
+    		<a href="search-organization.html">
+    			<i></i><span>按机构查询</span>
+    		</a>
+    	</li>
+    	<li>
+    		<a href="search-person.html">
+    			<i></i><span>按人员查询</span>
+    		</a>
+    	</li>
+    </ul>
+    <div id="wrapper">
+        <div class="scroller">
+            <ul class="seachRe">
+                <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+                 <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+                 <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="schedule-detail.html">
+                        <div class="top">
+                            <span>2018-08-08</span>
+                            <span>09:00-10:00</span>
+                        </div>
+                        <div class="bottom">
+                            <span class="imp">【重要】</span>
+                            <div>接管组<span>专题</span>会议会议会议会议会</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="more"><i class="pull_icon"></i><span>上拉加载...</span></div>
+        </div>
+    </div>
+<script>
+    $(".search .btn").on("click",function(){
+        $(".search .kind").hide();
+        $(".search #wrapper").show();
+        var a = $('.scroller').height();
+        var b = $('#wrapper').height()
+         var myscroll = new iScroll("wrapper",{
+            onScrollMove:function(){
+                if (this.y<(this.maxScrollY)) {
+                    $('.pull_icon').addClass('flip');
+                    $('.pull_icon').removeClass('loading');
+                    $('.more span').text('释放加载...');
+                }else{
+                    $('.pull_icon').removeClass('flip loading');
+                    $('.more span').text('上拉加载...')
+                }
+            },
+            onScrollEnd:function(){
+                if ($('.pull_icon').hasClass('flip')) {
+                    $('.pull_icon').addClass('loading');
+                    $('.more span').text('加载中...');
+                    pullUpAction();
+                }
+                
+            },
+            onRefresh:function(){
+                $('.more').removeClass('flip');
+                $('.more span').text('上拉加载...');
+            }
+            
+        });
+        
+        function pullUpAction(){
+            setTimeout(function(){
+                /*$.ajax({
+                    url:'/json/ay.json',
+                    type:'get',
+                    dataType:'json',
+                    success:function(data){
+                        for (var i = 0; i < 5; i++) {
+                            $('.scroller ul').append(data);
+                        }
+                        myscroll.refresh();
+                    },
+                    error:function(){
+                        console.log('error');
+                    },
+                })*/
+                for (var i = 0; i < 5; i++) {
+                    $('.scroller ul').append("<li><a href='schedule-detail.html'><div class='top'><span>2018-08-08</span><span>09:00-10:00</span></div><div class='bottom'><span class='imp'>【重要】</span><div>接管组<span>专题</span>会议会议会议会议会</div></div></a></li>");
+                }
+                myscroll.refresh();
+            }, 1000)
+        }
+        if ($('.scroller').height()<$('#wrapper').height()) {
+            $('.more').hide();
+            myscroll.destroy();
+        }
+        console.log($('.scroller').height(),$('#wrapper').height())
+    })
+       
+    </script>
+</body>
+</html>

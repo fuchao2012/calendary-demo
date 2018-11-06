@@ -1,0 +1,700 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors gaozhuo (you@example.org)
+ * @date    2018-10-30 15:09:13
+ * @version $Id$
+ */
+/*查询页面*/
+.search .inputCon{
+	width: 7.18rem;
+	background: rgba(243,243,243,1);
+	border-radius: 0.1rem;
+	height: 0.54rem;
+	margin: 0.16rem 0 0.16rem 0.16rem;
+	float: left;
+}
+.search .btn{
+	float: right;
+	font-size: 0.32rem;
+	color: rgba(226,55,55,1);
+	margin: 0.21rem 0.26rem 0 0;
+	display: none;
+}
+.search .icon01{
+	float: left;
+	width: 0.26rem;
+	height: 0.26rem;
+	background: url("../images/search01.png") no-repeat;
+	background-size: 100% 100%;
+	margin: 0.13rem 0.15rem;
+}
+.search .icon02{
+	float: right;
+	width: 0.29rem;
+	height: 0.29rem;
+	background: url("../images/delete.png") no-repeat;
+	background-size: 100% 100%;
+	margin: 0.12rem;
+	display: none;
+}
+.search input{
+	float: left;
+	background: transparent;
+	border: none;
+	height: 100%;
+	width: 70%;
+	color: rgba(0,0,0,.3);
+	font-size: 0.28rem;
+}
+.search .kind{
+	padding-left: 0.26rem;
+	display: inline-block;
+	margin-top: 0.18rem;
+	width: 100%;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(237,237,237,1);
+	border-bottom: 1px solid rgba(237,237,237,1);
+}
+.search .kind li{
+	border-bottom: 1px solid rgba(237,237,237,1);
+	height: 1.44rem;
+}
+.search .kind li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.search .kind li:last-child{
+	border-bottom: none;
+}
+.search .kind li i{
+	float: left;
+	width: 0.94rem;
+	height: 0.94rem;
+	margin: 0.26rem 0.2rem 0 0.26rem;
+}
+.search .kind li:first-child i{
+	background: url("../images/search02.png") no-repeat;
+	background-size: 100% 100%;
+}
+.search .kind li:last-child i{
+	background: url("../images/search03.png") no-repeat;
+	background-size: 100% 100%;
+}
+.search .kind li span{
+	float: left;
+	color: rgba(0,0,0,.9);
+	font-size: 0.32rem;
+	line-height: 1.44rem;
+}
+.search .seachRe{
+	padding-left: 0.26rem;
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+}
+.search .seachRe li{
+	border-bottom: 1px solid #f5f5f5;
+	height: 1.4rem;
+}
+.search .seachRe li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.search .seachRe li:last-child{
+	border-bottom: none;
+}
+.search .seachRe li .top{
+	overflow: hidden;
+	margin-bottom: 0.12rem;
+}
+.search .seachRe li .top span{
+	font-size: 0.28rem;
+	color: rgba(0,0,0,.6);
+	float: left;
+	margin-right: 0.2rem;
+	margin-top: 0.24rem;
+}
+.search .seachRe li .bottom .imp{
+	float: left;
+	font-size: 0.32rem;
+	color: #ff3c00;
+	opacity: 0.9;
+}
+.search .seachRe li .bottom div{
+	font-size: 0.32rem;
+	color: #000;
+}
+.search .seachRe li .bottom div span{
+	color: #ed6d59;
+}
+.search #wrapper{
+	position: absolute;
+	left: 0;
+	top: 0.86rem;
+	width: 100%;
+	display: none;
+	overflow: hidden;
+	z-index: 1;
+}
+.search .more{
+	height: 1rem;
+	display: flex;
+	color: #999;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.32rem;
+}
+/*按人员查询页面*/
+.person .result{
+	display: inline-block;
+	border-top: 1px solid rgba(237,237,237,1);
+	width: 100%;
+}
+.person .result li{
+	height: 1.5rem;
+	border-bottom: 1px solid rgba(237,237,237,1);
+}
+.person .result li:last-child{
+	border-bottom: none;
+}
+.person .result li i{
+	float: left;
+    height: 0.46rem;
+    width: 0.46rem;
+    border: 1px solid rgba(178,178,178,1);
+    border-radius: 50%;
+    margin: 0.32rem 0.26rem 0.26rem 0.26rem;
+    box-sizing: border-box;
+}
+.person .result .select i{
+	background: url("../images/select.png") no-repeat;
+	background-size: 100% 100%;
+	border: none;
+}
+.person .result li .divCon{
+	float: left;
+}
+.person .result li .divCon div{
+	height: 0.45rem;
+	margin-bottom: 0.14rem;
+	margin: 0.3rem 0 0.14rem;
+}
+.person .result li .divCon div span{
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.9);
+	margin-right: 0.26rem;
+	line-height: 0.45rem;
+}
+.person .result li .divCon span{
+	font-size: 0.28rem;
+	color: rgba(0,0,0,.6);
+	float: left;
+}
+.person.search #wrapper{
+	position: absolute;
+	left: 0;
+	top: 0.86rem;
+	width: 100%;
+	display: block;
+	overflow: visible;
+	z-index: 1;
+}
+.person .more{
+	height: 1rem;
+	display: flex;
+	color: #999;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.32rem;
+}
+.person footer{
+	width: 100%;
+	height: 1.2rem;
+	border-top: 1px solid rgba(237,237,237,1);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	z-index: 3;
+	display: none;
+}
+.person footer div{
+	float: left;
+	width: 5.35rem;
+	overflow: scroll;
+}
+.person footer ul{
+	flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+}
+.person footer ul li{
+	float: left;
+	font-size: 0.24rem;
+	color: rgba(0,0,0,.9);
+	padding: 0 0.28rem;
+	line-height: 1.2rem;
+	flex:none;
+}
+.person footer button{
+	width: 1.34rem;
+	height: 0.6rem;
+	background: rgba(226,55,55,1);
+	border-radius: 0.08rem;
+	font-size: 0.3rem;
+	color: #fff; 
+	float: right;
+	margin: 0.32rem 0.26rem 0 0;
+}
+.person #tip{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+	z-index: 4;
+	display: none;
+}
+.person #tip div{
+	background: #fff;
+	border-radius: 0.16rem;
+	width: 5.6rem;
+	height: 2.9rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -2.8rem;
+	margin-top: -1.45rem;
+}
+.person #tip div p{
+	width: 4.25rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: rgba(0,0,0,.5);
+	display: block;
+	margin: 0 auto;
+	margin-top: 0.7rem;
+}
+.person #tip div span{
+	width: 100%;
+	font-size: 0.32rem;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	height: 1rem;
+	line-height: 1rem;
+	border-top: 1px solid #ededed;
+}
+/*按机构查询页面*/
+.orga .tip{
+	height: 0.6rem;
+	width: 100%;
+	background: #f5f5f5;
+	color: rgba(0,0,0,.3);
+	font-size: 0.24rem;
+	line-height: 0.6rem;
+	text-indent: 0.26rem;
+}
+.orga ul{
+	padding-left: 0.26rem;
+	border-bottom: 1px solid rgba(237,237,237,1);
+	margin-bottom: 1rem;
+}
+.orga ul li{
+	border-bottom: 1px solid rgba(237,237,237,1);
+	height: 0.98rem;
+}
+.orga ul li:last-child{
+	border-bottom: none;
+}
+.orga ul li i{
+	float: left;
+	height: 0.46rem;
+	width: 0.46rem;
+	border: 1px solid rgba(178,178,178,1);
+	border-radius: 50%;
+	margin: 0.26rem 0.26rem 0 0;
+	box-sizing: border-box;
+}
+.orga ul .select i{
+	background: url("../images/select.png") no-repeat;
+	background-size: 100% 100%;
+	border: none;
+}
+.orga ul li span{
+	float: left;
+	line-height: 0.98rem;
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.9);
+}
+.orga button{
+	display: block;
+	margin: 0 auto;
+	width: 6.98rem;
+	height: 0.88rem;
+	background: rgba(226,55,55,1);
+	font-size: 0.34rem;
+	color: rgba(255,255,255,1);
+	border: none;
+	border-radius: 0.1rem;
+}
+/*日程详情页*/
+.detail .dateCon{
+	width: 100%;
+	height: 1.81rem;
+}
+.detail .dateCon .half{
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding: 0.3rem 0 0.25rem 0.26rem;
+	box-sizing: border-box;
+}
+.detail.gray .start{
+	background: rgba(229,229,229,.6);
+}
+.detail.gray .end{
+	background: rgba(192,192,192,1);
+}
+.detail.orange .start{
+	background: rgba(252,222,202,.6);
+}
+.detail.orange .end{
+	background: rgba(255,225,205,1);
+}
+.detail.green .start{
+	background: rgba(202,228,204,.6);
+}
+.detail.green .end{
+	background: rgba(109,197,115,.4);
+}
+.detail.purple .start{
+	background: rgba(247,234,250,1);
+}
+.detail.purple .end{
+	background: rgba(189,16,224,.2);
+}
+.detail.blue .start{
+	background: rgba(228,241,252,1);
+}
+.detail.blue .end{
+	background: rgba(195,226,255,1);
+}
+.detail .dateCon .half .date{
+	float: left;
+	font-size: 0.24rem;
+	color: rgba(0,0,0,.5);
+	width: 100%;
+	margin-bottom: 0.11rem;
+}
+.detail .dateCon .half div{
+	float: left;
+	width: 100%;
+	margin-bottom: 0.11rem;
+}
+.detail .dateCon .half div span{
+	float: left;
+	font-size: 0.24rem;
+	color: rgba(0,0,0,.9);
+	margin-right: 0.2rem;
+}
+.detail .dateCon .half .time{
+	font-size: 0.32rem;
+	color: rgba(0,0,0,1);
+	float: left;
+}
+.detail .content{
+	padding-left: 0.26rem;
+	border-bottom: 1px solid rgba(237,237,237,1);
+}
+.detail .content .title{
+	border-bottom: 1px solid rgba(237,237,237,1);
+	height: 0.98rem;
+}
+.detail .content .title i{
+	float: left;
+	width: 0.22rem;
+	height: 0.22rem;
+	background: url("../images/icon01.png") no-repeat;
+	background-size: 100% 100%;
+	margin: 0.42rem 0.09rem 0 0; 
+}
+.detail .content .title .type{
+	color: rgba(255,255,255,.9);
+	font-size: 0.26rem;
+	padding: 0.025rem 0.085rem;
+	float: left;
+	margin: 0.3rem 0.08rem 0 0;
+}
+.detail.gray .content .title .type{
+	background: rgba(0,0,0,1);
+}
+.detail.gray .content .title .type{
+	background: rgba(0,0,0,1);
+}
+.detail.orange .content .title .type{
+	background: rgba(255,132,52,1);
+}
+.detail.green .content .title .type{
+	background: rgba(109,197,115,1);
+}
+.detail.purple .content .title .type{
+	background: rgba(189,16,224,1);
+}
+.detail.blue .content .title .type{
+	background: rgba(70,166,255,1);
+}
+.detail .content .title h3{
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.9);
+	line-height: 0.98rem;
+	float: left;
+}
+.detail .content .title .level{
+	float: left;
+	font-size: 0.32rem;
+	color: #ff3c00;
+	line-height: 0.98rem;
+}
+.detail .content .substance{
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.6);
+	line-height: 0.98rem;
+	border-bottom: 1px solid rgba(237,237,237,1);
+}
+.detail .content .send{
+	height: 0.98rem;
+	border-bottom: 1px solid rgba(237,237,237,1);
+}
+.detail .content .send i{
+	float: left;
+	width: 0.22rem;
+	height: 0.22rem;
+	background: url("../images/icon02.png") no-repeat;
+	background-size: 100% 100%;
+	margin: 0.42rem 0.09rem 0 0; 
+}
+.detail .content .send div{
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.9);
+	line-height: 0.98rem;
+}
+.detail .content .receive{
+	overflow: hidden;
+	padding-bottom: 0.24rem;
+}
+.detail .content .receive i{
+	float: left;
+	width: 0.22rem;
+	height: 0.22rem;
+	background: url("../images/icon03.png") no-repeat;
+	background-size: 100% 100%;
+	margin: 0.42rem 0.09rem 0 0; 
+}
+.detail .content .receive div{
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.9);
+	line-height: 0.98rem;
+}
+.detail .content .receive div span{
+	color: rgba(0,0,0,.4);
+}
+.detail .content .receive ul{
+	width: 6.5rem;
+	overflow: hidden;
+	margin-left: 0.31rem;
+}
+.detail .content .receive ul li{
+	float: left;
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.6);
+	margin-bottom: 0.09rem;
+}
+/*新增日程页*/
+.add .title{
+	height: 0.88rem;
+	border-top: 0.15rem solid rgba(245,245,245,1);
+	border-bottom: 0.15rem solid rgba(245,245,245,1);
+	padding-left: 0.26rem;
+}
+.add .title input{
+	margin-top: 0.21rem;
+	height: 0.46rem;
+	line-height: 0.46rem;
+	float: left;
+	border: none;
+	float: left;
+	font-size: 0.32rem;
+	width: 6.98rem;
+}
+.add .title input::-webkit-input-placeholder{
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.3);
+}
+.add .container{
+	height: 0.98rem;
+	margin-left: 0.26rem;
+	border-bottom: 1px solid rgba(237,237,237,1);
+}
+.add .container input{
+	margin-top: 0.26rem;
+	height: 0.46rem;
+	line-height: 0.46rem;
+	float: left;
+	border: none;
+	float: left;
+	font-size: 0.32rem;
+	width: 6.98rem;
+}
+.add .container input::-webkit-input-placeholder{
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.3);
+}
+.add .type{
+	height: 0.88rem;
+	margin-left: 0.26rem;
+	border-bottom: 1px solid rgba(237,237,237,1);
+}
+.add .left{
+	float: left;
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.9);
+	line-height: 0.88rem;
+}
+.add .right{
+	float: right;
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.5);
+	line-height: 0.88rem;
+}
+.add.change .right{
+	color: rgba(0,0,0,.9);
+}
+.add .sameArrow{
+	float: right;
+	width: 0.23rem;
+	height: 0.23rem;
+	margin: 0.34rem 0.26rem 0 0.15rem;
+	background: url("../images/arrow.png") no-repeat;
+	background-size: 100% 100%;
+}
+.add .content{
+	width: 100%;
+	height: 1.46rem;
+	border-bottom: 0.15rem solid rgba(245,245,245,1);
+}
+.add .content .startTime{
+	position: relative;
+	float: left;
+	width: 3.11rem;
+	height: 100%;
+}
+.add .content .endTime{
+	position: relative;
+	float: right;
+	width: 3.11rem;
+	height: 100%;
+}
+.add .content .sameDiv input{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: none;
+	opacity: 0;
+}
+.add .blueArrow{
+	float: left;
+	width: 0.2rem;
+	height: 0.4rem;
+	background: url("../images/blueArrow.png") no-repeat;
+	background-size: 100% 100%;
+	margin: 0.52rem 0 0 0.55rem;
+}
+.add .sameDiv .sameSpan{
+	float: left;
+	width: 0.35rem;
+	font-size: 0.22rem;
+	color: rgba(0,0,0,.8);
+	background: rgba(220,234,247,1);
+	text-align: center;
+	margin: 0.35rem 0.27rem 0 0.26rem;
+	padding: 0.1rem 0;
+}
+.add .sameDiv:last-child .sameSpan{
+	margin-left: 0;
+}
+.add .sameDiv .timeCon{
+	float: left;
+}
+.add .sameDiv .timeCon span{
+	font-size: 0.36rem;
+	color: rgba(0,0,0,.9);
+}
+.add .sameDiv .timeCon div{
+	font-size: 0.22rem;
+	color: rgba(0,0,0,.9);
+	margin: 0.3rem 0 0.1rem 0;
+}
+.add .sameDiv .timeCon div span{
+	font-size: 0.22rem;
+}
+.add .sameDiv .timeCon .timeSpan{
+	float: left;
+}
+.add .seUl{
+	padding-left: 0.26rem;
+	border-bottom: 1px solid rgba(237,237,237,1);
+}
+.add .seUl li{
+	height: 0.88rem;
+	border-bottom: 1px solid rgba(237,237,237,1);
+}
+.add .seUl li:last-child{
+	border-bottom: none;
+}
+.add .seUl li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.add #select{
+	background: rgba(0,0,0,.4);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	display: none;
+}
+.add #select ul{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -2.8rem;
+	width: 5.6rem;
+	border-radius: 0.16rem;
+	background: rgba(255,255,255,1);
+}
+.add #select ul li{
+	height: 0.94rem;
+	font-size: 0.32rem;
+	line-height: 0.94rem;
+	font-size: 0.32rem;
+	color: rgba(0,0,0,.9);
+	text-align: center;
+	border-bottom: 1px solid rgba(226,226,226,1)
+}
+.add #select ul li:last-child{
+	border-bottom: none;
+}
+/*修改日程页*/
+.change .delete{
+	display: block;
+	width: 6.98rem;
+	height: 0.88rem;
+	background: rgba(226,55,55,1);
+	border-radius: 0.1rem;
+	font-size: 0.34rem;
+	color: rgba(255,255,255,1);
+	margin: 1rem auto;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no">
+<title>查询</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="assets/css/common.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<script src="assets/js/jquery-1.7.2.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+         //字体设置
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 50* (clientWidth / 375) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+</script>
+<body class="person search">
+	<div id="tip">
+		<div>
+			<p>每次最多可选择10人，您已经超出最大限制。</p>
+			<span>确定</span>
+		</div>
+	</div>
+    <div class="inputCon">
+    	<i class="icon01"></i>
+    	<input type="text" value="姓名">
+    	<i class="icon02"></i>
+    </div>
+    <span class="btn">搜索</span>
+    <div id="wrapper">
+    	<div class="scroller">
+    		<ul class="result">
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">包国峰</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">陈立强</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">陈亚涵</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">陈曼嫣</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">aa</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">aa</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">aa</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">aa</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">aa</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">陈亚涵</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+		    	<li>
+		    		<i></i>
+		    		<div class="divCon">
+		    			<div>
+		    				<span class="name">陈曼嫣</span>
+		    				<span>AB049086</span>
+		    			</div>
+		    			<span>平台事业部</span>
+		    		</div>
+		    	</li>
+   			</ul>
+    	</div>
+    </div>
+<footer>
+   	<div>
+   		<ul>
+   			<!-- <li>包国峰</li>
+   			<li>陈立强</li>
+   			<li>陈亚涵</li>
+   			<li>陈曼嫣</li> -->
+   		</ul>
+   	</div>
+   	<button>确定(<span></span>)</button>
+</footer>
+</body>
+</html>

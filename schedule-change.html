@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no">
+<title>新增日程</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="assets/css/common.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/mobiscroll.2.13.2.css" rel="stylesheet">
+<script src="assets/js/jquery-1.7.2.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/mobiscroll.2.13.2.js"></script>
+<script>
+         //字体设置
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 50* (clientWidth / 375) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+</script>
+</head>
+<body class="add change">
+	<div id="select">
+		<ul></ul>
+	</div>
+    <div class="title">
+    	<input type="text" value="接管组专题会议" maxlength="20">
+    </div>
+    <div class="container">
+    	<input type="text" value="A座605，请各位按时参加" maxlength="50">
+    </div>
+    <div class="type toSelect">
+    	<span class="left">类型</span>
+    	<i class="sameArrow"></i>
+    	<span class="right">会议</span>
+    </div>
+    <div class="content">
+        <div class="settings" style="display:none;">
+          <select name="demo" id="demo">
+              <option value="date">日期</option>
+          </select>
+        </div>
+        <div class="startTime sameDiv">
+        	 <input name="test" id="tests" class="demo-test-date demo-test-datetime demo-test-time demo-test-credit" />
+        	 <span class="sameSpan">开始</span>
+        	 <div class="timeCon">
+        	 	<div>2018年8月16日<span>(周三)</span></div>
+        	 	<span class="timeSpan">08:30</span>
+        	 </div>
+        </div>
+        <i class="blueArrow"></i>
+       	<div class="endTime sameDiv">
+       		 <input name="test" id="test" class="demo-test-date demo-test-datetime demo-test-time demo-test-credit" />
+       		 <span class="sameSpan">结束</span>
+       		 <div class="timeCon">
+        	 	<div>2018年8月16日<span>(周三)</span></div>
+        	 	<span class="timeSpan">08:30</span>
+        	 </div>
+       	</div>
+    </div> 
+    <ul class="seUl">
+    	<li>
+    		<a href="search-person.html">
+    			<span class="left">接收人</span>
+    			<i class="sameArrow"></i>
+    			<span class="right">包国峰、陈立强、陈雅涵等10人</span>
+    		</a>
+    	</li>
+    	<li class="a toSelect">
+    		<span class="left">公开程度</span>
+    		<i class="sameArrow"></i>
+    		<span class="right">私有</span>
+    	</li>
+    	<li class="b toSelect">
+    		<span class="left">紧急程度</span>
+    		<i class="sameArrow"></i>
+    		<span class="right">一般</span>
+    	</li>
+    	<li class="c toSelect">
+    		<span class="left">提醒方式</span>
+    		<i class="sameArrow"></i>
+    		<span class="right">不提醒</span>
+    	</li>
+    </ul>
+    <button class="delete">删除日程</button>
+	<script type="text/javascript">
+        $(function () {
+            var curr = new Date().getFullYear();
+            var opt={};
+			opt.date = {preset : 'date'};
+			opt.datetime = {preset : 'datetime'};
+			opt.time = {preset : 'time'};
+
+          opt.default = {
+				theme: 'android-holo light', //皮肤样式
+		        display: 'bottom', //显示方式 
+		        mode: 'scroller', //日期选择模式
+				dateFormat: 'yyyy年mm月dd日',
+				dayText: '日',
+				monthText: '月',
+				yearText:'年',
+				rows: 3,
+				lang: 'zh',
+				showNow: true,
+				nowText: "当前",
+				stepMinute: 30,
+				height: 48,
+		        startYear: curr - 0, //开始年份
+		        endYear: curr + 0 //结束年份
+			};
+            $('.settings').bind('change', function() {
+                var demo = 'datetime';
+                if (!demo.match(/select/i)) {
+                    $('.demo-test-' + demo).val('');
+                }
+                $('.demo-test-' + demo).scroller('destroy').scroller($.extend(opt['datetime'], opt['default']));
+                $('.demo').hide();
+                $('.demo-' + demo).show();
+            });
+            $('#demo').trigger('change');
+        });
+    </script>
+</body>
+</html>

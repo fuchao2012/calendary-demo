@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no">
+<title>日程详情</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="assets/css/common.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<script src="assets/js/jquery-1.7.2.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+         //字体设置
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 50* (clientWidth / 375) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+</script>
+</head>
+<!-- 灰色gray橙色orange绿色green紫色purple蓝色blue -->
+<body class="detail gray">
+    <div class="dateCon">
+    	<div class="start half">
+    		<span class="date">开始时间</span>
+    		<div>
+    			<span>2018年8月16日</span>
+    			<span>星期三</span>
+    		</div>
+    		<span class="time">13:30</span>
+    	</div>
+    	<div class="end half">
+    		<span class="date">结束时间</span>
+    		<div>
+    			<span>2018年8月26日</span>
+    			<span>星期三</span>
+    		</div>
+    		<span class="time">14:30</span>
+    	</div>
+    </div>
+    <ul class="content">
+    	<li class="title">
+    		<i></i>
+    		<span class="type">其他</span>
+    		<h3>接管组专题会议</h3>
+    		<span class="level">【重要】</span>
+    	</li>
+    	<li class="substance">A座605，请各位按时参加。</li>
+    	<li class="send">
+    		<i></i>
+    		<div>发起人：<span>沈佳宜</span></div>
+    	</li>
+    	<li class="receive">
+    		<i></i>
+    		<div>接收人<span>（10人）</span>：</div>
+    		<ul>
+    			<li>包国峰、</li>
+    			<li>陈立强、</li>
+    			<li>陈雅涵、</li>
+    			<li>韩佳、</li>
+    			<li>包国峰、</li>
+    			<li>包国峰、</li>
+    			<li>陈立强、</li>
+    			<li>陈雅涵、</li>
+    			<li>韩佳、</li>
+    			<li>王丽</li>
+    		</ul>
+    	</li>
+    </ul>
+</body>
+</html>

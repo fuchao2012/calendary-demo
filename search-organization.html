@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, width=device-width, user-scalable=no">
+<title>按机构查询</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="assets/css/common.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<script src="assets/js/jquery-1.7.2.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+         //字体设置
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 50* (clientWidth / 375) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+</script>
+</head>
+<body class="orga">
+<div class="tip">请选择想要查询的机构（可多选）</div>
+<ul>
+    <li>
+        <i></i><span>安邦财产保险股份有限公司</span>
+    </li>
+    <li>
+        <i></i><span>安邦人寿保险股份有限公司</span>
+    </li>
+    <li>
+        <i></i><span>和谐健康保险股份有限公司</span>
+    </li>
+    <li>
+        <i></i><span>安邦养老保险股份有限公司</span>
+    </li>
+    <li>
+        <i></i><span>安邦资产管理有限责任公司</span>
+    </li>
+</ul>
+<button>确定</button>
+</body>
+</html>
